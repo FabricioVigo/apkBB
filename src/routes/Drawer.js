@@ -6,7 +6,7 @@ import "react-native-gesture-handler"
 
 import HomeScreen from '../screens/HomeScreen';
 import ClientList from '../screens/ClientList';
-import Productos from '../screens/Lista1';
+import Lista1 from '../screens/Lista1';
 import Productos2 from '../screens/Lista2';
 import Pedidos from '../screens/Pedidos';
 import AddProduct from '../screens/AddProduct';
@@ -27,7 +27,7 @@ export default function DrawerMenu() {
         >
             <Drawer.Screen name='Home' component={HomeScreen} />
             <Drawer.Screen name='ClientList' component={ ClientList } />
-            <Drawer.Screen name="Productos" component={Productos} />
+            <Drawer.Screen name="Productos" component={Lista1} />
             <Drawer.Screen name="Pedidos" component={ Pedidos } />
             <Drawer.Screen name="Add" component={ AddProduct } />
             <Drawer.Screen name="Productos2" component={Productos2} />
@@ -80,7 +80,7 @@ const MenuItems = ({ navigation })=>{
     const styles= StyleSheet.create({
         container:{
             padding:15,
-            backgroundColor: "#7201d4"
+            backgroundColor: "#066EA2"
         },
          /* #7f00b8 */
         title:{

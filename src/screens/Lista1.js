@@ -1,11 +1,58 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, FlatList, ScrollView, Button} from 'react-native';
-import   fb from '../config/fb';
-import { ListItem } from 'react-native-elements';
+import { View, Text, FlatList, ScrollView, StyleSheet, TextInput} from 'react-native';
+import { ListItem, SearchBar } from 'react-native-elements';
+import products from './products.json'
+import { useNavigation } from '@react-navigation/native'
 
 
 
-const Productos = () => {
+const Lista1 = () => {
+
+    const navigation = useNavigation();
+
+    useEffect(()=>{
+        navigation.setOptions({
+            headerTitle: 'Lista 1',
+            headerStyle:{
+              backgroundColor: "#066EA2"
+            },
+            headerTitleStyle:{
+              color:"#ffffff"
+            }
+        })
+    })
+
+
+    return (
+        <ScrollView>
+            <View>
+            <SearchBar placeholder='Buscar' />
+            </View>
+
+          {
+            products.map(products =>{
+              return(
+                <ListItem
+                  key={products.id}
+                  >
+                  <ListItem.Chevron />
+                  <ListItem.Content>
+                  <ListItem.Title>{ products.name }</ListItem.Title>
+                  <ListItem.Subtitle>{ products.precio }</ListItem.Subtitle>
+                  <ListItem.Subtitle>{ products.Um }</ListItem.Subtitle>
+
+                  
+                  
+                  </ListItem.Content>
+                  </ListItem>
+              );
+            })
+          }
+        </ScrollView>
+        );
+    }
+
+
 
     /* const [products, setProducts] = useState([]);
 
@@ -118,8 +165,8 @@ const Productos = () => {
         </View>
     ); */
 
-}
+
 
     
 
-export default Productos;
+export default Lista1;

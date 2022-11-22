@@ -1,0 +1,98 @@
+[
+    {
+        "id" : 1,
+        "name": "lavandina",
+        "precio": 93,
+        "Um" : "1 Litro"
+    },
+    {
+        "id" : 2,
+        "name": "lavandina",
+        "precio": 178,
+        "Um" : "2 Litros"
+
+    },
+    {
+        "id" : 3,
+        "name" : "lavandina",
+        "precio" : 347,
+        "Um" : "5 Litros"
+
+    },
+    {
+        "id" : 4,
+        "name" : "desodorante de piso",
+        "precio" : 93,
+        "Um" : "900 mm "
+    },
+    {
+        "id" : 5,
+        "name" : "desodorante de piso",
+        "precio" : 347,
+        "Um" : "5 Litros"
+    },
+    {
+        "id" : 6,
+        "name" : "Jabon p ropa",
+        "precio" : 234,
+        "Um" : "1 Litro "
+    },
+    {
+        "id" : 7,
+        "name" : "Jabon p ropa",
+        "precio" : 840,
+        "Um" : "5 Litros"
+    },
+    {
+        "id" : 8,
+        "name" : "suavizante",
+        "precio" : 225,
+        "Um" : "1 Litro"
+    },
+    {
+        "id" : 9,
+        "name" : "suavizante",
+        "precio" : 838,
+        "Um" : "5 Litros"
+
+    },
+    {
+        "id" : 10,
+        "name" : "detergente",
+        "precio" : 106,
+        "Um" : "750 cc"
+    },
+    {
+        "id" : 11,
+        "name" : "detergente comun",
+        "precio" : 680,
+        "Um" : "5 Litros"
+    },
+    {
+        "id" : 12,
+        "name" : "detergente extra",
+        "precio" : 798,
+        "Um" : "5 Litros"
+
+    },
+    {
+        "id" : 13,
+        "name" : "limpia vidrio",
+        "precio" : 268,
+        "Um" : "1 Litro"
+
+    },
+    {
+        "id" : 14,
+        "name" : "limpia vidrio",
+        "precio" : 989,
+        "Um" : "5 Litros"
+    },
+    {
+        "id" : 15,
+        "name" : "quitasarro",
+        "precio" : 436,
+        "Um" : "1 Litro"
+    }
+
+]

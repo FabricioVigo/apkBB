@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "nombre" : "Claudia Marisa Aneas",
+        "direccion": "Barrio Bun 215"
+    },
+    {
+        "id": 2,
+        "nombre" : "25 de Mayo",
+        "direccion": "Av Los Pescadores"
+    },
+    {
+        "id": 3,
+        "nombre" : "Dia %",
+        "direccion": "Italia 754"
+    },
+    {
+        "id": 4,
+        "nombre" : "Los Chinos",
+        "direccion": "Belgrano 229"
+    },
+    {
+        "id": 5,
+        "nombre" : "Las Marys",
+        "direccion": "Barrio Bun 124"
+    },
+    {
+        "id": 6,
+        "nombre" : "Altos de Monte",
+        "direccion": "Av San Martin 52"
+    },
+    {
+        "id": 7,
+        "nombre" : "Todo util",
+        "direccion": "Av San Martin 650"
+    },
+    {
+        "id": 8,
+        "nombre" : "Supermercado Abbott",
+        "direccion": "Urquiza 60"
+    },
+    {
+        "id": 9,
+        "nombre" : "Cotto",
+        "direccion": "Arroquigaray 50"
+    },
+    {
+        "id": 10,
+        "nombre" : "Sebastian",
+        "direccion": "Lalinde 404"
+    }
+]

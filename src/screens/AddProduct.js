@@ -1,24 +1,42 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Button, TextInput, ScrollView, StyleSheet} from 'react-native';
 import { db } from '../config/fb';
 import { collection, addDoc } from 'firebase/firestore';
+import { useNavigation } from '@react-navigation/native';
 
 const CreateProduct = () => {
 
+
+  useEffect(()=>{
+    navigation.setOptions({
+        headerTitle: 'Agregar Producto',
+        headerStyle:{
+          backgroundColor: "#066EA2"
+        },
+        headerTitleStyle:{
+          color:"#ffffff"
+        }
+    })
+})
+
+
+  const navigation = useNavigation();
+
 const [ state, setState] = useState ({
   name: '',
-  email: '',
-  direccion: '',
+  precio: '',
+  Um: ''
 });
 const handleChangeText = (name, value) => {
   setState({ ...state, [name]: value})
 }
 
   const AddNewProduct = async() => {
-  if( state.name === "" || state.email === "" || state.direccion === ""){
+  if( state.name === "" || state.precio === "" || state.Um === ""){
     alert("Llene todos los campos")
   }else{
        await addDoc(collection(db,'productos'),state)
+       navigation.navigate('Productos')
       }
 }  
 
@@ -35,7 +53,7 @@ const handleChangeText = (name, value) => {
       </View>
       <View style={styles.inputGroup}>
         <TextInput placeholder="Unidad de medida" 
-        onChangeText={(value) => handleChangeText('litros', value)}/>
+        onChangeText={(value) => handleChangeText('Um', value)}/>
       </View>
       <View>
         <Button title="Guardar Producto" onPress={()=> AddNewProduct()} />

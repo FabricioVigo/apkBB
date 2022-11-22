@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import DrawerMenu from '../routes/Drawer';
 import AddClient from '../screens/AddClient'
 import AddProduct from '../screens/AddProduct';
+import Register from '../screens/Register';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,8 @@ export default function Navigate() {
         <Stack.Screen name='Drawer' options={{headerShown:false}} component={ DrawerMenu } />
       <Stack.Screen name='AddClient' component={ AddClient } />
       <Stack.Screen name='AddProduct' component={ AddProduct } />
+      <Stack.Screen name='Register' component={ Register } />
+
 
 
 

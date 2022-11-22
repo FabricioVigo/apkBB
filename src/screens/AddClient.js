@@ -1,10 +1,25 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Button, TextInput, ScrollView, StyleSheet} from 'react-native';
 import { db } from '../config/fb';
 import { collection, addDoc } from 'firebase/firestore';
+import { useNavigation } from '@react-navigation/native';
 
 const CreateUsers = () => {
 
+  useEffect(()=>{
+    navigation.setOptions({
+        headerTitle: 'Nuevo Producto',
+        headerStyle:{
+          backgroundColor: "#066EA2"
+        },
+        headerTitleStyle:{
+          color:"#ffffff"
+        }
+    })
+})
+
+
+  const navigation = useNavigation();
 const [ state, setState] = useState ({
   name: '',
   direccion: '',
@@ -18,6 +33,7 @@ const handleChangeText = (name, value) => {
     alert("Llene todos los campos")
   }else{
        await addDoc(collection(db,'clientes'),state)
+       navigation.navigate('ClientList')
       }
 }  
 
